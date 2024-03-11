@@ -16,7 +16,6 @@ def add_person():
     nombre = content['nombre']
     apellido = content['apellido']
 
-    # Construct a BigQuery client object.
     table_id = f"{client.project}.{dataset_name}.{table_name}"
 
     rows_to_insert = [
